@@ -18,10 +18,7 @@ const handlers = {
 };
 const updateDate = (argv, action = "add") => {
     const resultDate = new Date();
-    console.log("");
-    console.log("PRINT argv");
-    console.log(argv);
-    console.log("++++++++++++++++++++++++++++++++++++++++++++++++");
+
     for (const datePart in argv) {
         if (options.includes(datePart)) {
             const diff = action === "sub" ? -argv[datePart] : argv[datePart];
